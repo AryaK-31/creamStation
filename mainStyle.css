@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#banner {
+    height: 100vh;
+    width: 100%;
+    background: rgb(226, 80, 19);
+    background: radial-gradient(circle, rgba(226, 80, 19, 1) 40%, rgba(221, 123, 12, 1) 45%, rgb(0, 0, 0) 60%);
+    position: relative;
+
+}
+
+#cone {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.65rem;
+    padding: 10px 50px;
+    letter-spacing: none;
+}
+
+
+#nav-left {
+    display: flex;
+    gap: 3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#right {
+    display: flex;
+    gap: 2rem;
+    padding-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#banner-btn {
+    background-color: transparent;
+    padding: 10px 35px;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+#banner-btn:hover {
+    background-color: white;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: ease-in;
+    transition-duration: 200ms;
+}
+
+#center {
+    font-family: 'Kaushan Script', cursive;
+    padding-right: 7rem;
+}
+
+#content {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    z-index: 100;
+}
+
+#content h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 8.1rem;
+    letter-spacing: 1rem;
+}
+
+#content h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+#grad {
+    background: -webkit-linear-gradient(#fce113, #ff9318, #a40303);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#about {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.65), rgba(0, 0, 0, 1.95)), url("https://images.pexels.com/photos/1352282/pexels-photo-1352282.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#bag {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#details {
+    position: absolute;
+    font-size: 1.4rem;
+    width: 600px;
+    color: white;
+    font-weight: 100;
+    left: 7%;
+    top: 22%;
+}
+
+#details h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+#details h1 {
+    font-size: 4rem;
+}
+
+#bag h3 {
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+    color: white;
+    left: 2%;
+    top: 3%;
+}
+
+#logo {
+    position: absolute;
+    right: 10%;
+    top: 12%;
+}
+
+#services {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 230, 230);
+}
+
+.cards {
+    height: 30vh;
+    width: 85%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#card-details {
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 30px;
+}
+
+#card-details p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    max-width: 70%;
+}
+
+#card-details h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#card-details button {
+    padding: 6px 12px;
+    color: orangered;
+    font-size: 1rem;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid orangered;
+    font-weight: 400;
+}
+
+#card-details button:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    transition-duration: 200ms;
+}
+
+#image {
+    height: 50vh;
+    width: 100%;
+    background-image: url(./cwaf.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact {
+    height: 58vh;
+    width: 100%;
+    background-color: orangered;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#form-fields {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 0.5rem;
+    padding-left: 20px;
+}
+
+#form-fields input {
+    height: 2.4rem;
+    font-size: 1.3rem;
+    padding: 4px;
+    color: orangered;
+    border-radius: 4px;
+    border: none;
+}
+
+#form-fields textarea {
+    height: 10rem;
+    font-size: 1.3rem;
+    padding: 4px;
+    color: orangered;
+    border-radius: 4px;
+    border: none;
+}
+
+#submit {
+    position: absolute;
+    height: 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 6rem;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    right: 0;
+    bottom: -53px;
+}
+
+.contact-content {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    gap: 2.8rem;
+    position: absolute;
+    right: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-content h1 {
+    font-size: 4rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.contact-content p {
+    font-size: 1.25rem;
+}
+
+.left h4 {
+    font-size: 1.5rem;
+}
+
+#icon {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#hover-img {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+#hover-right {
+    background-image: url(waff-hover.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+#hover-left {
+    background-image: url(sundae-hover.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    width: 50%;
+}
+
+#hover-left .hide-left{
+    display: none;
+    text-align: center;
+    max-width: 600px;
+    font-size: 1.8rem;
+    font-family: 'Tangerine', cursive;
+}
+#hover-left:hover .hide-left{
+    display: block;
+    color: white;
+    
+}
+
+#hover-right:hover .hide-right{
+    display: block;
+    color: white;
+}
+
+#hover-right .hide-right{
+    display: none;
+    color: white;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Tangerine', cursive;
+    font-weight: lighter;
+}
+
+#hover-right:hover + .hide-right{
+    display: block;
+    color: white;
+}
+
+#hover-left:hover {
+    background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.55), rgba(0, 0, 0, 1.45)), url(sundae-hover.jpg);
+    transition-duration: 600ms;
+    transition: ease-in;
+    
+}
+
+#hover-right:hover {
+    background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.45), rgba(0, 0, 0, 1.25)), url(waff-hover.jpg);
+    transition-duration: 300ms;
+   
+}
+
+
+#menu{
+    width: 100%;
+    height: 180vh;
+    background-color: black;
+    padding: 50px 50px;
+    
+}
+#menu h1{
+    font-size: 3.5rem;
+    font-family: 'Kaushan Script', cursive;
+    color: orangered;
+
+}
+
+.wrapper{
+    width: 90%;
+    height: 86%;
+    /* background-color: white; */
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.icecreams{
+    /* background-color: #a40303; */
+    flex: 1;
+    border-bottom: 2px solid orangered;
+    
+
+}
+.sundaes{
+    /* background-color: #fce113; */
+    flex: 1;
+    border-bottom: 2px solid orangered;
+    
+}
+.waffles{
+    /* background-color: #ff9318; */
+    flex:1;
+    border-bottom: 2px solid orangered;
+
+}
+.icecream1{
+    height: 90%;
+    width: 29%;
+    background-color:white;
+    padding: 10px;
+    
+
+
+}
+.icecreamcards{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+}
+.top{
+    background-image: url(./chocolate_icecream.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.bottom p{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.6rem;
+
+}
+.bottom button{
+    background-color: orangered;
+    border: 1px solid white;
+    padding: 6px 10px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 9px;
+    
+}
+.bottom button:hover{
+    background-color: white;
+    border: 1px solid orangered;
+    color: orangered;
+    transition-duration: 300ms;
+
+}
+
+#badge{
+    background-color: orangered;
+    position: absolute;
+    color: white;
+    z-index: 100;
+    padding: 6px 9px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    top: 3%;
+    left: 2%;
+}
+.top1{
+    background-image: url(https://images.unsplash.com/photo-1591677445539-840cc64705f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.top2{
+    background-image: url(https://images.unsplash.com/photo-1598601721927-2e9b03aa1b07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top3{
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-994516_11-7d9c5b0.jpg?quality=90&webp=true&resize=300,272);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top4{
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1081492_11-5ff297c.jpg?quality=90&webp=true&resize=300,272);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top5{
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bacon-ice-cream-sunday-0d7973b.png?quality=90&webp=true&resize=300,272);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top6{
+    background-image: url(https://b.zmtcdn.com/data/dish_photos/82b/2c98b4ba21d3457525731f650ff6882b.png);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top7{
+    background-image: url(https://product-assets.faasos.io/production/product/image_1657262745714_Berry_Velvet_Waffle_SLM__BWC_.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.top8{
+    background-image: url(https://thehintofrosemary.com/wp-content/uploads/2019/12/chocolate-waffle-cover-pic-scaled.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+#footer{
+    height: 22vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    align-items: center;
+}
+.content{
+    /* width: 70%;
+    background-color: #a40303;
+    margin-left: auto;
+    margin-right: auto; */
+    
+}
+.ftop{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.text{
+   width: 15%;
+}
+.maillist{
+    width: 30%;
+    
+}
+.maillist input{
+    margin-top: 8px;
+    background-color: rgb(42, 41, 41);
+    border: 2px solid white;
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.maillist button{
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid orangered;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.maillist button:hover{
+    background-color: white;
+    color: orangered;
+    transition-duration:300ms;
+    border: 2px solid white;
+}
+.text h3{
+    font-size: 1.5rem;
+    color: orangered;
+}
+.text p{
+    
+}
+.fbottom{
+    color: orangered;
+}
+.icecream1:hover{
+    box-shadow: 0px 5px 20px rgba(232, 232, 232, 0.977);
+}

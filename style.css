@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, rgba(255, 35, 7, 1) 0%, rgba(226, 80, 19, 1) 41%, rgba(145, 8, 53, 1) 100%);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#imgSection {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    z-index: 100;
+}
