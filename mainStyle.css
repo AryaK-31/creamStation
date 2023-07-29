@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +33,8 @@ a {
     position: absolute;
     bottom: 0;
     left: 50%;
+    height: 800px;
+    width: 475px;
     transform: translateX(-50%);
 
 }
@@ -123,6 +126,7 @@ ul {
 
 #about {
     height: 100vh;
+    width: 100%;
     position: relative;
     background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.65), rgba(0, 0, 0, 1.95)), url("https://images.pexels.com/photos/1352282/pexels-photo-1352282.jpeg");
     background-position: center;
@@ -354,6 +358,7 @@ ul {
     height: 100%;
     width: 50%;
 }
+
 #hover-left {
     background-image: url(sundae-hover.jpg);
     display: flex;
@@ -365,25 +370,26 @@ ul {
     width: 50%;
 }
 
-#hover-left .hide-left{
+#hover-left .hide-left {
     display: none;
     text-align: center;
     max-width: 600px;
     font-size: 1.8rem;
     font-family: 'Tangerine', cursive;
 }
-#hover-left:hover .hide-left{
+
+#hover-left:hover .hide-left {
     display: block;
     color: white;
-    
+
 }
 
-#hover-right:hover .hide-right{
+#hover-right:hover .hide-right {
     display: block;
     color: white;
 }
 
-#hover-right .hide-right{
+#hover-right .hide-right {
     display: none;
     color: white;
     max-width: 600px;
@@ -393,7 +399,7 @@ ul {
     font-weight: lighter;
 }
 
-#hover-right:hover + .hide-right{
+#hover-right:hover+.hide-right {
     display: block;
     color: white;
 }
@@ -402,35 +408,36 @@ ul {
     background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.55), rgba(0, 0, 0, 1.45)), url(sundae-hover.jpg);
     transition-duration: 600ms;
     transition: ease-in;
-    
+
 }
 
 #hover-right:hover {
     background-image: linear-gradient(270deg, rgba(18, 18, 18, 0.45), rgba(0, 0, 0, 1.25)), url(waff-hover.jpg);
     transition-duration: 300ms;
-   
+
 }
 
 
-#menu{
+#menu {
     width: 100%;
     height: 180vh;
     background-color: black;
     padding: 50px 50px;
-    
+
 }
-#menu h1{
+
+#menu h1 {
     font-size: 3.5rem;
     font-family: 'Kaushan Script', cursive;
     color: orangered;
 
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     height: 86%;
     /* background-color: white; */
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     display: flex;
@@ -439,42 +446,47 @@ ul {
 
 }
 
-.icecreams{
+.icecreams {
     /* background-color: #a40303; */
     flex: 1;
     border-bottom: 2px solid orangered;
-    
+
 
 }
-.sundaes{
+
+.sundaes {
     /* background-color: #fce113; */
     flex: 1;
     border-bottom: 2px solid orangered;
-    
+
 }
-.waffles{
+
+.waffles {
     /* background-color: #ff9318; */
-    flex:1;
+    flex: 1;
     border-bottom: 2px solid orangered;
 
 }
-.icecream1{
+
+.icecream1 {
     height: 90%;
     width: 29%;
-    background-color:white;
+    background-color: white;
     padding: 10px;
-    
+
 
 
 }
-.icecreamcards{
+
+.icecreamcards {
     display: flex;
     height: 90%;
     width: 100%;
     justify-content: space-around;
     padding: 20px;
 }
-.top{
+
+#top {
     background-image: url(./chocolate_icecream.jpg);
     background-position: center;
     background-size: cover;
@@ -482,21 +494,24 @@ ul {
     width: 100%;
     position: relative;
 }
-.bottom p{
+
+.bottom p {
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.6rem;
 
 }
-.bottom button{
+
+.bottom button {
     background-color: orangered;
     border: 1px solid white;
     padding: 6px 10px;
     font-size: 1.2rem;
     color: white;
     border-radius: 9px;
-    
+
 }
-.bottom button:hover{
+
+.bottom button:hover {
     background-color: white;
     border: 1px solid orangered;
     color: orangered;
@@ -504,7 +519,7 @@ ul {
 
 }
 
-#badge{
+#badge {
     background-color: orangered;
     position: absolute;
     color: white;
@@ -515,7 +530,8 @@ ul {
     top: 3%;
     left: 2%;
 }
-.top1{
+
+#top1 {
     background-image: url(https://images.unsplash.com/photo-1591677445539-840cc64705f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
     background-position: center;
     background-size: cover;
@@ -524,7 +540,7 @@ ul {
     position: relative;
 }
 
-.top2{
+#top2 {
     background-image: url(https://images.unsplash.com/photo-1598601721927-2e9b03aa1b07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
     background-position: left;
     background-size: cover;
@@ -532,7 +548,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top3{
+
+.top3 {
     background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-994516_11-7d9c5b0.jpg?quality=90&webp=true&resize=300,272);
     background-position: left;
     background-size: cover;
@@ -540,7 +557,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top4{
+
+.top4 {
     background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1081492_11-5ff297c.jpg?quality=90&webp=true&resize=300,272);
     background-position: left;
     background-size: cover;
@@ -548,7 +566,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top5{
+
+.top5 {
     background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bacon-ice-cream-sunday-0d7973b.png?quality=90&webp=true&resize=300,272);
     background-position: left;
     background-size: cover;
@@ -556,7 +575,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top6{
+
+.top6 {
     background-image: url(https://b.zmtcdn.com/data/dish_photos/82b/2c98b4ba21d3457525731f650ff6882b.png);
     background-position: left;
     background-size: cover;
@@ -564,7 +584,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top7{
+
+.top7 {
     background-image: url(https://product-assets.faasos.io/production/product/image_1657262745714_Berry_Velvet_Waffle_SLM__BWC_.jpg);
     background-position: left;
     background-size: cover;
@@ -572,7 +593,8 @@ ul {
     width: 100%;
     position: relative;
 }
-.top8{
+
+.top8 {
     background-image: url(https://thehintofrosemary.com/wp-content/uploads/2019/12/chocolate-waffle-cover-pic-scaled.jpg);
     background-position: left;
     background-size: cover;
@@ -580,8 +602,10 @@ ul {
     width: 100%;
     position: relative;
 }
-#footer{
+
+#footer {
     height: 22vh;
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -591,28 +615,33 @@ ul {
     gap: 12rem;
     align-items: center;
 }
-.content{
+
+.content {
     /* width: 70%;
     background-color: #a40303;
     margin-left: auto;
     margin-right: auto; */
-    
+
 }
-.ftop{
+
+.ftop {
     height: 80%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.text{
-   width: 15%;
+
+.text {
+    width: 15%;
 }
-.maillist{
+
+.maillist {
     width: 30%;
-    
+
 }
-.maillist input{
+
+.maillist input {
     margin-top: 8px;
     background-color: rgb(42, 41, 41);
     border: 2px solid white;
@@ -622,7 +651,8 @@ ul {
     font-size: 14px;
     font-weight: bold;
 }
-.maillist button{
+
+.maillist button {
     margin-top: 8px;
     width: 100%;
     height: 30px;
@@ -633,22 +663,286 @@ ul {
     text-transform: uppercase;
     font-size: 17px;
 }
-.maillist button:hover{
+
+.maillist button:hover {
     background-color: white;
     color: orangered;
-    transition-duration:300ms;
+    transition-duration: 300ms;
     border: 2px solid white;
 }
-.text h3{
+
+.text h3 {
     font-size: 1.5rem;
-    color: orangered;
+
 }
-.text p{
+
+/* .text p{
     
-}
-.fbottom{
+} */
+.fbottom {
     color: orangered;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
 }
-.icecream1:hover{
+
+#icon-footer {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.icecream1:hover {
     box-shadow: 0px 5px 20px rgba(232, 232, 232, 0.977);
+}
+
+/* Styles for the Up Arrow button */
+#upArrowButton {
+    position: fixed;
+    padding: 5px;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#upArrowButton:hover {
+    background-color: #0056b3;
+}
+
+.topp.black-bg {
+    background-color: black;
+}
+
+.top-content {
+    visibility: hidden;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.top-content.reveal {
+    visibility: visible;
+}
+
+.top-content p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.top-content button {
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+.box {
+    height: 0;
+}
+
+
+@media (max-width: 500px) {
+
+    #navbar #left {
+        display: none;
+    }
+
+    #navbar #right {
+        display: none;
+    }
+
+    #navbar #center {
+        padding-right: 0;
+
+    }
+
+    #navbar .box {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+    }
+
+    #navbar #center {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar {
+        padding: 8px 16px;
+    }
+    
+
+    .box div {
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    #center h1 {
+        font-size: 2rem;
+    }
+
+    #content h3 {
+        font-size: 1.7rem;
+    }
+
+    #content h1 {
+        font-size: 4rem;
+    }
+
+    #banner #cone {
+        height: 700px;
+        width: 400px;
+
+    }
+
+    #services {
+
+        flex-direction: column;
+        padding: 0;
+        height: 140vh;
+        justify-content: flex-start;
+
+    }
+
+    #services .cards {
+        flex-direction: column;
+
+
+    }
+
+    #menu {
+        height: 550vh;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 93%;
+        gap: 20px;
+
+    }
+
+    .icecreams,
+    .sundaes,
+    .waffles {
+
+        width: 100%;
+        gap: 20px;
+
+    }
+
+    .icecream1 {
+        width: 100%;
+    }
+
+    .icecreamcards .bottom p {
+        font-size: 17px;
+
+    }
+
+    .icecreamcards {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #contact {
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #contact .left {
+        width: 100%;
+    }
+
+    #contact .right {
+        width: 100%;
+    }
+
+    #form-fields {
+        width: 90%;
+
+    }
+
+    #footer {
+        padding-top: 40px;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+
+
+    }
+
+    #footer .ftop {
+
+        padding-left: 30px;
+        flex-direction: column;
+        gap: 40px;
+        height: 60vh;
+    }
+
+    .text {
+        width: 30%;
+    }
+
+    .maillist {
+        width: 90%;
+
+    }
+
+    #footer .fbottom {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        font-size: 17px;
+    }
+
+    #icon-footer {
+        display: none;
+    }
+
+    #hover-img #hover-left {
+        display: none;
+    }
+
+    #hover-img #hover-right {
+        width: 100%;
+    }
+
+    #about {
+        height: 140vh;
+    }
+
+    #about #logo {
+        height: 140px;
+        left: 30%;
+        top: 10%;
+    }
+
+    #details {
+        width: 80%;
+    }
 }

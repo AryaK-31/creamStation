@@ -14,14 +14,22 @@
 <body>
     <section id="banner" style="color: aliceblue;">
         <div id="navbar">
+            
             <div id="left">
-                <ul id="nav-left">
+                <ul id="nav-left" class="nav-links">
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <h1 id="center">CreamStation</h1>
+            <div id="center">
+                <div class="box" id="hamburger-icon" onclick="toggleNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>CreamStation</h1>
+            </div>
             <div id="right">
                 <i class="ri-instagram-line"></i>
                 <i class="ri-twitter-line"></i>
@@ -32,7 +40,7 @@
             <h3>Welcome Amigos</h3>
             <h1>ICE C<span id="grad" style="color: rgb(228, 34, 66);">R</span>EAM</h1>
         </div>
-        <img id="cone" src="cone.png" alt="" height="800" width="475">
+        <img id="cone" src="cone.png" alt="">
     </section>
     <section id="about">
         <div id="bag">
@@ -42,6 +50,7 @@
                 <h2 style="color: rgb(225, 83, 32);">Creamy.</h2>
                 <h2>Authentic.</h2>
                 <h1>~</h1>
+                <h4>Text 1</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rem praesentium illo dolore
                     dignissimos
                     eius, quidem officiis ut temporibus molestiae totam similique blanditiis porro nam nostrum cumque.
@@ -55,10 +64,10 @@
                 </p>
             </div>
         </div>
-        <img id="logo" src="oic-logo.png" alt="" data-aos="fade-zoom-in">
+        <img id="logo" src="oic-logo.png" alt="" data-aos="fade-right">
     </section>
     <section id="services">
-        <div class="cards" st>
+        <div class="cards">
             <div id="card-details" data-aos="fade-right">
                 <img src="ice-cream.png" alt="" height="90">
                 <h1>Ice Creams</h1>
@@ -87,36 +96,41 @@
                 <h1 style="color: white;">Ice-Creams</h1>
                 <div class="icecreamcards">
                     <div class="icecream1">
-                        <div class="top">
+                        <div class="topp" id="top">
                             <span id="badge">
                                 <h4>₹150 /-</h4>
                             </span>
+
                         </div>
                         <div class="bottom">
                             <p>Chocolate Icecream</p>
-                            <button>Description</button>
+                            <button class="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
-                        <div class="top1">
+                        <div class="topp" id="top1">
                             <span id="badge">
                                 <h4>₹200 /-</h4>
                             </span>
+                            <div class="top-content reveal">
+                            </div>
                         </div>
                         <div class="bottom">
                             <p>Mango Icecream</p>
-                            <button>Description</button>
+                            <button class="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
-                        <div class="top2">
+                        <div class="topp" id="top2">
                             <span id="badge">
                                 <h4>₹100 /-</h4>
                             </span>
+                            <div class="top-content">
+                            </div>
                         </div>
                         <div class="bottom">
                             <p>Vanilla Icecream</p>
-                            <button>Description</button>
+                            <button class="desc-btn">Description</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +147,7 @@
                         </div>
                         <div class="bottom">
                             <p>Nutty caramel & choc sundaes</p>
-                            <button>Description</button>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
@@ -144,7 +158,7 @@
                         </div>
                         <div class="bottom">
                             <p>Fruity summer sundaes</p>
-                            <button>Description</button>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
@@ -154,8 +168,8 @@
                             </span>
                         </div>
                         <div class="bottom">
-                            <p>Blueberry sundae </p>
-                            <button>Description</button>
+                            <p>Blueberry sundae</p>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                 </div>
@@ -173,7 +187,7 @@
                         </div>
                         <div class="bottom">
                             <p>Triple Chocolate Waffle</p>
-                            <button>Description</button>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
@@ -184,7 +198,7 @@
                         </div>
                         <div class="bottom">
                             <p>Berry Velvet Waffle</p>
-                            <button>Description</button>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                     <div class="icecream1">
@@ -195,7 +209,7 @@
                         </div>
                         <div class="bottom">
                             <p>Belgian Chocolate Waffle</p>
-                            <button>Description</button>
+                            <button id="desc-btn">Description</button>
                         </div>
                     </div>
                 </div>
@@ -204,7 +218,7 @@
         </div>
     </section>
     <section id="contact" data-aos="fade-right">
-        <div class="left" >
+        <div class="left">
             <div class="contact-content">
                 <div class="main-content">
                     <h1>Contact Us</h1>
@@ -247,7 +261,7 @@
             </div>
         </div>
     </section>
-    <section id="footer" data-aos="fade-right">
+    <section id="footer">
         <img src="oic-logo.png" alt="" height="100">
         <div class="content">
 
@@ -279,6 +293,12 @@
             </div>
             <div class="fbottom">
                 <p>@2023 Designed & Developed By Team GoDev</p>
+                <ul id="icon-footer">
+                    <li><i class="ri-facebook-circle-line"></i></li>
+                    <li><i class="ri-instagram-line"></i></li>
+                    <li><i class="ri-twitter-line"></i></li>
+                    <li><i class="ri-youtube-line"></i></li>
+                </ul>
             </div>
 
         </div>
@@ -288,13 +308,10 @@
 
     </section>
 
-
+    <button id="upArrowButton" onclick="scrollToTop()">↑</button>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 120,
-            duration: 1500
-        });
+    <script src="logic.js">
+
     </script>
 </body>
 
